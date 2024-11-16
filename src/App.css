@@ -1,38 +1,102 @@
-.App {
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Navigation Bar */
+.atm-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003366;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.atm-nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.atm-nav-link:hover {
+  background-color: #004c99;
+  transform: translateY(-2px);
+}
+
+.atm-nav-icon {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+/* Sections Styling */
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.container > div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container > div h2 {
+  font-size: 22px;
+  color: #003366;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container > div p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .atm-nav {
+      flex-direction: column;
+      text-align: center;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .atm-nav-link {
+      margin: 10px 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .container > div {
+      width: 80%;
+      margin-bottom: 20px;
   }
 }

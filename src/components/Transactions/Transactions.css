@@ -1,0 +1,148 @@
+/* General Page Styles */
+.transactions-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Bar Styles */
+.transactions-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-icon {
+    color: #888;
+    font-size: 20px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Transaction List */
+.transactions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.transaction-detail-btn,
+.transaction-delete-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.transaction-detail-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.transaction-delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+.modal-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modal-details-table th,
+.modal-details-table td {
+    padding: 8px 10px;
+    text-align: left;
+}
+
+.modal-details-table th {
+    font-weight: bold;
+    color: #555;
+}
+
+.modal-details-table td {
+    color: #333;
+}
